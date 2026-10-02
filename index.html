@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tandoori | Authentic Pakistani Cuisine</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="nav">
+
+            <a class="logo" href="#home">
+                <i>✦</i>
+
+                <div>
+                    <b>TANDOORI</b>
+                    <small>AUTHENTIC PAKISTANI CUISINE</small>
+                </div>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#order">Order Now</a>
+                <a href="#services">Our Services</a>
+                <a href="#locations">Locations</a>
+                <a href="#franchising">Franchising</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+
+        <img src="media/image1.jpg" alt="Pakistani grilled food">
+
+        <div class="overlay"></div>
+
+        <div class="hero-text">
+
+            <small>AUTHENTIC PAKISTANI CUISINE</small>
+
+            <h1>TANDOORI</h1>
+
+            <p>
+                TRADITIONAL RECIPES • REAL FLAVORS • SINCE 1993
+            </p>
+
+            <a class="btn" href="#order">
+                ORDER NOW →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SIGNATURE DISHES ================= -->
+    <section id="order">
+
+        <div class="title">
+
+            <small>OUR SPECIALS</small>
+
+            <h2>Signature Dishes</h2>
+
+            <p>
+                Discover our most loved dishes, prepared with authentic
+                spices and traditional recipes.
+            </p>
+
+        </div>
+
+
+        <div class="foods">
+
+            <div class="food">
+                <img src="media/image2.jpg" alt="Reshmi Kabab">
+
+                <div class="info">
+                    <h3>Reshmi Kabab</h3>
+                    <span>PKR 1,290</span>
+                </div>
+            </div>
+
+
+            <div class="food">
+                <img src="media/image3.jpg" alt="Sher Khan Platter">
+
+                <div class="info">
+                    <h3>Sher Khan Platter</h3>
+                    <span>PKR 2,490</span>
+                </div>
+            </div>
+
+
+            <div class="food">
+                <img src="media/image4.jpg" alt="Chicken Handi">
+
+                <div class="info">
+                    <h3>Chicken Handi</h3>
+                    <span>PKR 1,490</span>
+                </div>
+            </div>
+
+
+            <div class="food">
+                <img src="media/image5.jpg" alt="Chicken Tikka">
+
+                <div class="info">
+                    <h3>Chicken Tikka</h3>
+                    <span>PKR 1,390</span>
+                </div>
+            </div>
+
+
+            <div class="food">
+                <img src="media/image6.jpg" alt="Special Biryani">
+
+                <div class="info">
+                    <h3>Special Biryani</h3>
+                    <span>PKR 1,590</span>
+                </div>
+            </div>
+
+
+            <div class="food">
+                <img src="media/image7.jpg" alt="Tandoori Naan">
+
+                <div class="info">
+                    <h3>Tandoori Naan</h3>
+                    <span>PKR 290</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= ORDER FORM ================= -->
+        <div class="order-form-wrap">
+            <div class="order-form-heading">
+                <small>PLACE YOUR ORDER</small>
+                <h2>Order From Tandoori</h2>
+                <p>Fill in your details and we will receive your order directly.</p>
+            </div>
+
+            <form id="orderForm" class="order-form">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="customerName">Full Name</label>
+                        <input id="customerName" name="customerName" type="text" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel" placeholder="03XXXXXXXXX" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="dish">Select Dish</label>
+                        <select id="dish" name="dish" required>
+                            <option value="">Choose a dish</option>
+                            <option value="Reshmi Kabab">Reshmi Kabab — PKR 1,290</option>
+                            <option value="Sher Khan Platter">Sher Khan Platter — PKR 2,490</option>
+                            <option value="Chicken Handi">Chicken Handi — PKR 1,490</option>
+                            <option value="Chicken Tikka">Chicken Tikka — PKR 1,390</option>
+                            <option value="Special Biryani">Special Biryani — PKR 1,590</option>
+                            <option value="Tandoori Naan">Tandoori Naan — PKR 290</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="quantity">Quantity</label>
+                        <input id="quantity" name="quantity" type="number" min="1" value="1" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="serviceType">Order Type</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="Delivery">Home Delivery</option>
+                            <option value="Takeaway">Takeaway</option>
+                            <option value="Dine In">Dine In</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" type="text" placeholder="Delivery address / city" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="notes">Special Instructions</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Any special request (optional)"></textarea>
+                </div>
+
+                <button class="btn order-submit" id="orderSubmit" type="submit">PLACE ORDER →</button>
+                <p id="orderMessage" class="order-message" role="status"></p>
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+
+        <div class="about-img">
+
+            <img src="media/image8.jpg" alt="Restaurant">
+
+            <div class="badge">
+
+                <strong>30+</strong>
+
+                <span>
+                    YEARS OF<br>
+                    TRADITION
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-copy">
+
+            <small>OUR STORY</small>
+
+            <h2>
+                A Tradition of<br>
+                Authentic Taste
+            </h2>
+
+            <p>
+                At Tandoori, we believe food is more than just a meal.
+                It is a way of bringing families and communities together.
+            </p>
+
+            <p>
+                Our chefs prepare every dish with carefully selected
+                ingredients, traditional recipes and authentic Pakistani spices.
+            </p>
+
+            <a class="btn" href="#services">
+                LEARN MORE →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services">
+
+        <div class="title">
+
+            <small>WHAT WE OFFER</small>
+
+            <h2>Our Services</h2>
+
+            <p>
+                From dine-in to delivery, enjoy your food your way.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="service">
+
+                <div class="icon">🍴</div>
+
+                <h3>Dine In</h3>
+
+                <p>
+                    Relax and enjoy your meal with family and friends.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="icon">🛍</div>
+
+                <h3>Takeaway</h3>
+
+                <p>
+                    Order your favorite dishes and pick them up.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="icon">🚚</div>
+
+                <h3>Home Delivery</h3>
+
+                <p>
+                    Fresh and hot food delivered to your doorstep.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="icon">🍽</div>
+
+                <h3>Catering</h3>
+
+                <p>
+                    Make your events special with our catering service.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VIDEO ================= -->
+    <section class="video-section" id="experience">
+
+        <div class="video-wrap">
+
+            <video
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+                preload="auto"
+            >
+
+                <source
+                    src="media/restaurant_food_video.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support HTML5 video.
+
+            </video>
+
+
+            <div class="video-caption">
+
+                <small>THE TANDOORI EXPERIENCE</small>
+
+                <h2>
+                    Made Fresh.<br>
+                    Served With Tradition.
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOCATIONS ================= -->
+    <section class="locations" id="locations">
+
+        <div class="title">
+
+            <small>VISIT US</small>
+
+            <h2>Our Locations</h2>
+
+            <p>
+                Experience authentic Pakistani cuisine at a Tandoori
+                restaurant near you.
+            </p>
+
+        </div>
+
+
+        <div class="loc-grid">
+
+            <div class="loc">
+
+                <small>LOCATION 01</small>
+
+                <h3>Main Boulevard</h3>
+
+                <p>Pakistan</p>
+
+            </div>
+
+
+            <div class="loc">
+
+                <small>LOCATION 02</small>
+
+                <h3>City Center</h3>
+
+                <p>Pakistan</p>
+
+            </div>
+
+
+            <div class="loc">
+
+                <small>LOCATION 03</small>
+
+                <h3>Food Street</h3>
+
+                <p>Pakistan</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FRANCHISING ================= -->
+    <section class="franchise" id="franchising">
+
+        <p>GROW WITH US</p>
+
+        <h2>
+            Bring The Tandoori<br>
+            Experience To Your City
+        </h2>
+
+        <p>
+            Become part of our journey and bring authentic Pakistani
+            cuisine to your community.
+        </p>
+
+        <a class="btn" href="#home">
+            FRANCHISE WITH US →
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="foot">
+
+            <div>
+
+                <h2>TANDOORI</h2>
+
+                <p>AUTHENTIC PAKISTANI CUISINE</p>
+
+                <p>Traditional flavors. Real memories.</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>QUICK LINKS</h3>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#order">Order Now</a>
+                <a href="#services">Services</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>EXPLORE</h3>
+
+                <a href="#locations">Locations</a>
+                <a href="#franchising">Franchising</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>CONTACT</h3>
+
+                <p>☎ +92 300 1234567</p>
+                <p>✉ info@tandoori.com</p>
+                <p>📍 Pakistan</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="bottom">
+
+            <span>
+                © 2025 Tandoori. All Rights Reserved.
+            </span>
+
+            <span>
+                Authentic Pakistani Cuisine
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= SHARE BUTTON ================= -->
+    <div class="share-section" id="share">
+
+        <button
+            class="share-button"
+            type="button"
+            onclick="shareRestaurantWebsite()"
+        >
+            ↗ Share Website
+        </button>
+
+        <p
+            id="shareMessage"
+            class="share-message"
+        ></p>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
